@@ -20,3 +20,13 @@ like:[期刊]余涛、俞立中、王铮：移动计算环境下GIS技术的发�
 Version 1.0
 
 * [+]中文文献中的期刊和学位论文，自动检索与排版。
+
+delExtraRef
+-
+remove the extra elements of the reference in bibtex.
+
+@keywords: is the elements that ready to be removed.
+
+modifyName
+-
+modify the file name into the '创建时间' create time.
