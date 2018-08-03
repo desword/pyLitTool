@@ -2,6 +2,7 @@ import urllib2
 import re
 import time
 from lxml import etree
+import msvcrt
 
 def checkprogram(confSite, startStr, badContent):
     # confSite = "http://sensys.acm.org/2018/program/"
@@ -39,3 +40,6 @@ for line in lines:
     checkprogram(confSite, startStr, badContent)
 
 # print html
+
+
+msvcrt.getch()
