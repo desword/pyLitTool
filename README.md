@@ -30,3 +30,9 @@ remove the extra elements of the reference in bibtex.
 modifyName
 -
 modify the file name into the '创建时间' create time.
+
+
+rename.py
+-
+modify the file name in the current folder into the '创建时间' create time.
+need python 3. 
