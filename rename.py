@@ -30,14 +30,24 @@ for root, dirs, files in os.walk(folder):
 
     for eachf in files:
 
+        extend_str = ""
+
         print(eachf)
         if ".py" in eachf:
             continue;
+        if ".MP4" in eachf:
+            extend_str = ".MP4"
+        if ".JPG" in eachf:
+            extend_str = ".JPG"
+            
         filemt= time.localtime(os.stat(eachf).st_mtime)
         tm1 = time.strftime("%Y%m%d-%H%M%S",filemt)
+        
         tm1 =samefiledeal(tm1)
 
-        os.rename(eachf , tm1)
+        tm2 = tm1+extend_str
+
+        os.rename(eachf , tm2)
 
 
 
